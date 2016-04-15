@@ -104,8 +104,14 @@ public class CharacterFileDAO implements CharacterDAO {
 	}
 	
 	@Override
-	public Character updateCharacter(Character character) {
-		Character c = new Character();
-		return c;
+	public List<Character> editCharacter(Character character) {
+		Character oldCharacter = new Character();
+		for(Character charact: characters){
+			if(character.getId()==charact.getId()){
+				oldCharacter = charact;
+			}
+		}
+		characters.set(characters.indexOf(oldCharacter), character);
+		return characters;
 	}
 }

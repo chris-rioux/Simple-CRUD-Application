@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -63,21 +64,22 @@
 	            </div>
 	            <div class="card card-block text-xs-center">
 	                <h4 class="card-header">${character.name}</h4>
-	                <div class="card-block text-xs-center">
-	                <input type="int" value="" placeholder="${character.id}"/></br>
-	                <input type="int" value="" placeholder="${character.marvelId}"/></br>
-	                <input type="text" value="" placeholder="${character.name}"/></br>
-	                <input type="text" value="" placeholder="${character.alias}"/></br>
-	                <input type="text" value="" placeholder="${character.affiliation}"/></br>
-	                <input type="text" value="" placeholder="${character.desc}"/></br>
-	                <input type="text" value="" placeholder="${character.image}"/></br>
-					</div>
-					<div class="card-footer text-muted">
-                		<h5 class="text-xs-center">Edit Character</h5>
-						<form action="editCharacter.do" method="GET">
-							<button class="btn btn-md text-normal btn-danger" type="submit" value="update" name="update">Update</button>
-						</form>
+	                <h5 class="text-xs-center">Edit Character</h5>
+	                <form:form action="editCharacter.do" modelAttribute="character">
+                   		<fieldset>	
+                   			<form:input path="id" type="hidden" name="id" placeholder="${character.id}"/><form:errors path="id"/><br/>
+                   			<form:input path="marvelId" type="int" name="marvelId" placeholder="${character.marvelId}"/><form:errors path="marvelId"/><br/>
+							<form:input path="name" type="text" name="name" placeholder="${character.name}"/><form:errors path="name"/><br/>
+							<form:input path="alias" type="text" name="alias" value="" placeholder="${character.alias}"/><br/>
+							<form:input path="affiliation" type="text" name="affiliation" value="" placeholder="${character.affiliation}"/><br/>
+							<form:input path="desc" type="text" name="desc" value="" placeholder="${character.desc}"/><br/>
+							<form:input path="image" type="text" name="image" value="" placeholder="${character.image}"/><br/>
+						</fieldset>	
 						</br>
+						<button class="btn btn-md text-normal btn-danger" type="submit" name="id" value="Update" >Update</button>
+					</form:form>
+					</br>
+					<div class="card-footer text-muted">
 						<form action="removeCharacter.do" method="POST">
 							<input type="hidden" name="id" value="${character.id}"/>
 							<button class="btn btn-md text-normal btn-danger" type="submit" name="id" value="Delete">Delete</button>
