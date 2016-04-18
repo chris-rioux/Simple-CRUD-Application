@@ -63,7 +63,7 @@
 	</c:when>
 	<c:otherwise>
  		<header id="first">
- 			<img id="headerImg" src="./img/smHeadShotCollage.jpg" usemap="#Map">
+ 			<img class="img-responsive" id="headerImg" src="./img/smHeadShotCollage.jpg" usemap="#Map">
  				<map name="Map" id="Map">
 				    <area alt="" title="" href="GetCharacterData.do?characterName=Iron Patriot" shape="poly" coords="38,3,147,2,148,148,40,149" />
 				    <area alt="" title="" href="GetCharacterData.do?characterName=Colossus" shape="poly" coords="150,2,260,1,262,149,152,149" />
@@ -127,7 +127,7 @@
 			<c:choose>
 				<c:when test="${!empty character}">
 		            <div class="card card-block text-xs-center">
-		                <img src="${character.image}">
+		                <img class="img-fluid" src="${character.image}">
 		            </div>
 		            <div class="card card-block text-xs-center">
 		                <h4 class="card-header">${character.name}</h4>
@@ -249,6 +249,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     
     <script src="js/scripts.js"></script>
+    <script src="js/imageMapResizer.min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+    	$('Map').imageMapResize();
+	});
+    </script>
     
   </body>
 </html>

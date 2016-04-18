@@ -219,6 +219,7 @@ footer h4, footer h6 {
 	background: no-repeat center center scroll;
     opacity: 0.9;
     z-index: -1;
+    width: 100%;
 }
 
 header {
