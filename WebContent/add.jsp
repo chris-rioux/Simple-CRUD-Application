@@ -93,43 +93,59 @@
 <footer>
 	<div class="row">
 		<div class="col-lg-12">
-			<p class="text-xs-center"><a href="http://www.chrisriouxdevelopment.com">Chris Rioux Development</a> &copy; 2016</p>
+			<p class="text-xs-center"><a href="http://www.chrisriouxdevelopment.com" target="_blank">Chris Rioux Development</a> &copy; 2016</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3" style="text-align:center">
-			<a href="https://twitter.com/chrisrioux_"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
-			<a href="https://www.linkedin.com/in/chris-rioux-b500569a"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;&nbsp;
-			<a href="https://github.com/chrisrioux2"><i class="fa fa-github fa-2x"></i></a>
+			<a href="https://twitter.com/chrisrioux_" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/in/chris-rioux-b500569a" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;&nbsp;
+			<a href="https://github.com/chrisrioux2" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 			</br>
       	</div>
 	</div>
 </footer>
 
 <!-- Modals -->
-<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-            <div class="card card-block text-xs-center">
-		            <div class="card card-block text-xs-center">
-		                <h4 class="card-header">Chris Rioux</h4>
-						<p class="text-xs-center">Full Stack Java Web Development. Visit My<a href="http://www.chrisriouxdevelopment.com"> Site!</p> 
-						<a href="https://twitter.com/chrisrioux_" class="btn btn-primary-outline"><i class="fa fa-twitter fa-fw"></i>&nbsp;&nbsp;Twitter</a>
-	                    <a href="https://github.com/chrisrioux2" class="btn btn-primary-outline"><i class="fa fa-github-alt fa-fw"></i>&nbsp;&nbsp;Github</a>
-	                    <a href="https://www.linkedin.com/in/chris-rioux-b500569a" class="btn btn-primary-outline"><i class="fa fa-linkedin fa-fw"></i>&nbsp;&nbsp;Linkedin</a>
-						<p class="text-xs-center"> </p>
-					<div class="card-footer text-muted">
-					<img class="card-img-bottom" src="./img/smallestPic.jpg" alt="Card image cap">
-					<p class="text-xs-center"> </p>
-					<button class="btn btn-primary center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
-		            </div>
-		       	</div>
-            </div>
-        	</div>
-    	</div>
-	</div>
-</div><!-- #aboutModal -->
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-xs-center">Full Stack Web Development</h4>
+					<p class="text-xs-center">
+						Check Out<a href="http://www.chrisriouxdevelopment.com"
+							target="_blank"> ChrisRiouxDevelopment.com</a>
+					</p>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-xs-4 text-xs-center">
+								<ul class="list-inline banner-social-buttons">
+									<li id="topButton"><a href="https://twitter.com/chrisrioux_" target="_blank"
+										class="btn btn-primary-outline"><i
+										class="fa fa-twitter fa-fw"></i>&nbsp;&nbsp;Twitter</a></li><br> 
+									<li><a href="https://github.com/chrisrioux2" target="_blank"
+										class="btn btn-primary-outline"><i
+										class="fa fa-github-alt fa-fw"></i>&nbsp;&nbsp;Github</a></li><br>
+									<li><a href="https://www.linkedin.com/in/chris-rioux-b500569a"
+										target="_blank" class="btn btn-primary-outline"><i
+										class="fa fa-linkedin-square fa-fw"></i>&nbsp;&nbsp;Linkedin</a></li><br>								
+								</ul>
+							</div>
+							<div class="col-xs-8">
+								<img class="center-block" src="./img/smallestPic.jpg" alt="">
+							</div>
+						</div>
+						<hr>
+						<div class="modal-footer">
+							<button class="btn btn-primary center-block" data-dismiss="modal"
+								aria-hidden="true">OK</button>
+						</div><!-- /.modal-footer -->
+					</div><!-- /.modal-body -->
+				</div><!-- /.modal-header -->
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /#aboutModal -->
 
     <!--scripts loaded here-->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
