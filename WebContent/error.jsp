@@ -65,7 +65,7 @@
 	<footer>
 	<div class="row">
 		<div class="col-lg-12">
-			<p class="text-xs-center"><a href="http://www.chrisriouxdevelopment.com" target="_blank">Chris Rioux Development</a> &copy; 2016</p>
+			<p class="text-xs-center"><a href="http://www.chrisriouxapplications.com/" target="_blank">Chris Rioux Applications</a> &copy; 2016</p>
 		</div>
 	</div>
 	<div class="row">
@@ -86,8 +86,8 @@
 				<div class="modal-header">
 					<h4 class="modal-title text-xs-center">Full Stack Web Development</h4>
 					<p class="text-xs-center">
-						Check Out<a href="http://www.chrisriouxdevelopment.com"
-							target="_blank"> ChrisRiouxDevelopment.com</a>
+						Check Out<a href="http://www.chrisriouxapplications.com/"
+							target="_blank"> Chris Rioux Applications.com</a>
 					</p>
 					<div class="modal-body">
 						<div class="row">
